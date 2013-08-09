@@ -28,4 +28,8 @@ def freebsd?
   !!(RUBY_PLATFORM =~ /freebsd/)
 end
 
+def aix?
+  !!(RUBY_PLATFORM =~ /aix/)
+end
+
 DEV_NULL = windows? ? 'NUL' : '/dev/null'
